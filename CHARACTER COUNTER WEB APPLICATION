@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Character Counter</h1>
+    <textarea id="textArea" placeholder="Type your paragraph here..."></textarea>
+    <button onclick="countCharacters()">Count</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+style.css
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center
+}
+
+
+JAVA FUNCTION
+function countCharacters() {
+    var textArea = document.getElementById("textArea");
+    var paragraph = textArea.value;
+    var characterCount = paragraph.length;
+    var result = document.getElementById("result");
+    result.innerText = "Character count: " + characterCount;
+}
