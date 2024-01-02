@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML & CSS Blog</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML & CSS Blog</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>The Basics of HTML</h2>
+            <p>HTML (HyperText Markup Language) is the backbone of the web. It provides a standardized way to structure
+                content on the internet. HTML uses tags to define elements such as headings, paragraphs, lists, links,
+                images, and more. Understanding HTML is fundamental for anyone looking to create web pages.</p>
+        </article>
+
+        <article>
+            <h2>Cascading Style Sheets (CSS)</h2>
+            <p>CSS (Cascading Style Sheets) is the style language that enhances the presentation of HTML documents.
+                With CSS, you can control the layout, colors, fonts, and spacing of your web pages. It allows for
+                separation of content and presentation, making it easier to maintain and update the design of your
+                site.</p>
+        </article>
+
+        <section id="image-gallery">
+            <h2>HTML Images</h2>
+            <div class="image-container">
+                <img src="html_image1.jpg" alt="HTML Image 1">
+                <img src="html_image2.jpg" alt="HTML Image 2">
+                <img src="html_image3.jpg" alt="HTML Image 3">
+            </div>
+        </section>
+
+        <article>
+            <h2>Responsive Web Design with CSS</h2>
+            <p>Creating websites that work seamlessly on various devices is crucial. Learn about responsive web design
+                techniques using CSS. Explore media queries, flexible grids, and other strategies to make your
+                websites look great on desktops, tablets, and smartphones.</p>
+        </article>
+
+        <article>
+            <h2>Advanced CSS Features</h2>
+            <p>Dive into advanced CSS features such as animations, transitions, and flexbox. Discover how to create
+                modern and interactive user interfaces with CSS. Stay up-to-date with the latest trends and best
+                practices in front-end development.</p>
+        </article>
+
+        <!-- More articles and content can be added here -->
+
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+STYLE.css
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+#image-gallery {
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
